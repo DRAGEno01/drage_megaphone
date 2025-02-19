@@ -31,3 +31,4 @@ Police use Megaphone system to tell the suspect where to pull over.
 Free to use, and code is open source.
 
 You can change any part of the script, but 1 request please: Please keep the settings name and author name as original.
+If you wish to change the settings name and author name, please contact me on Discord: @DRAGEno01
