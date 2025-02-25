@@ -7,7 +7,7 @@ RegisterCommand('megaphone', function()
     local ped = PlayerPedId()
     local vehicle = GetVehiclePedIsIn(ped, false)
     
-    if vehicle ~= 0 and exports['lvc']:IsVehicleHasLvc(vehicle) then
+    if vehicle ~= 0 and GetVehicleClass(vehicle) == 18 then -- Class 18 is emergency vehicles
         if GetPedInVehicleSeat(vehicle, -1) == ped then
             usingMegaphone = not usingMegaphone
             TriggerEvent('QBCore:Notify', usingMegaphone and 'Megaphone ON' or 'Megaphone OFF')
